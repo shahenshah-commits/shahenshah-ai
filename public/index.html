@@ -1,41 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shahenshah AI</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#070816">
+  <meta name="description" content="Shahenshah AI — Personal AI Assistant">
+
+  <title>Shahenshah AI</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<div class="background-glow glow-one"></div>
+<div class="background-glow glow-two"></div>
 
 <div class="app">
 
-<header class="topbar">
-<div class="brand">
-<div class="logo">S</div>
-<div>
-<h1>Shahenshah AI</h1>
-<span>Personal AI Assistant</span>
-</div>
-</div>
-<button id="clearBtn">Clear Chat</button>
-</header>
+  <!-- TOP BAR -->
+  <header class="topbar">
 
-<main id="chat"></main>
+    <div class="brand">
 
-<section class="welcome" id="welcome">
-<div class="welcome-logo">S</div>
-<h2>Welcome to Shahenshah AI</h2>
-<p>Ask me anything and let's build something amazing.</p>
-</section>
+      <div class="logo">
+        S
+      </div>
 
-<form id="chatForm" class="composer">
-<textarea id="messageInput" placeholder="Message Shahenshah AI..." rows="1"></textarea>
-<button type="submit" id="sendBtn">➤</button>
-</form>
+      <div class="brand-text">
+        <h1>Shahenshah AI</h1>
+
+        <div class="status">
+          <span class="status-dot"></span>
+          Personal AI Assistant
+        </div>
+      </div>
+
+    </div>
+
+    <button id="clearBtn" class="clear-btn" type="button">
+      <span>⌫</span>
+      Clear
+    </button>
+
+  </header>
+
+
+  <!-- CHAT -->
+  <main id="chat" class="chat"></main>
+
+
+  <!-- WELCOME -->
+  <section class="welcome" id="welcome">
+
+    <div class="welcome-logo">
+      <span>S</span>
+    </div>
+
+    <div class="welcome-badge">
+      ✦ AI ASSISTANT
+    </div>
+
+    <h2>
+      Welcome to
+      <span>Shahenshah AI</span>
+    </h2>
+
+    <p>
+      Ask questions, learn, code, create and explore ideas
+      with your personal AI assistant.
+    </p>
+
+    <div class="suggestions">
+
+      <button type="button" class="suggestion">
+        Explain something to me
+      </button>
+
+      <button type="button" class="suggestion">
+        Help me write code
+      </button>
+
+      <button type="button" class="suggestion">
+        Give me a creative idea
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- COMPOSER -->
+  <form id="chatForm" class="composer">
+
+    <div class="input-wrap">
+
+      <textarea
+        id="messageInput"
+        placeholder="Message Shahenshah AI..."
+        rows="1"
+        autocomplete="off"
+      ></textarea>
+
+      <div class="input-hint">
+        Enter to send · Shift + Enter for new line
+      </div>
+
+    </div>
+
+    <button
+      type="submit"
+      id="sendBtn"
+      class="send-btn"
+      aria-label="Send message"
+    >
+      <span>➤</span>
+    </button>
+
+  </form>
+
+  <div class="footer-note">
+    Shahenshah AI · Your personal AI assistant
+  </div>
 
 </div>
 
 <script src="app.js"></script>
+
 </body>
 </html>
